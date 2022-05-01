@@ -1,0 +1,138 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="post.css" />
+    </head>
+    <body>
+        <h1 class="title">
+            First post
+        </h2>
+        <div class="postbody">
+            <img src="images/kittens.jpg" alt="Thumbnail" />
+            <p class="textbody">
+                This is an image of three kittens that I had sitting on my laptop
+            </p>
+        </div>
+
+        <div class="details">
+            <p class="upvotes">
+                14 upvotes
+            </p>
+            <p class="date">
+                30/04/2022
+            </p>
+            <p class="commentnums">
+                2 comments
+            </p>
+            <a class="uploader" href="uploadername">
+                uploader: barry
+            </a>
+        </div>
+
+        <div class="votes">
+            <button>Upvote</button>
+            <button>Downvote</button>
+        </div>
+
+        <div class="addcomment">
+            <textarea></textarea>
+            <button>Comment</button>
+        </div>
+        <div class="comments">
+            <li class="row">
+                <p class="commentbody">
+                    Thanks for uploading!
+                </p>
+                <div class="details">
+                    <a class="name">
+                        By Someone
+                    </a>
+                    <div class="votes">
+                        <button>Upvote</button>
+                        <button>Downvote</button>
+                    </div>
+                    <p class="upvotes">
+                        14 upvotes
+                    </p>
+                    <p class="date">
+                        30/04/2022
+                    </p>
+                </div>
+            </li>
+            <li class="row">
+                <p class="commentbody">
+                    I've definitely seen this one before
+                </p>
+                <div class="details">
+                    <a class="name">
+                        By Someone
+                    </a>
+                    <div class="votes">
+                        <button>Upvote</button>
+                        <button>Downvote</button>
+                    </div>
+                    <p class="upvotes">
+                        14 upvotes
+                    </p>
+                    <p class="date">
+                        30/04/2022
+                    </p>
+                </div>
+            </li>
+            
+        </div>
+    </body>
+
+    <style>
+        body{
+            margin: 5px 20px;
+            color: pink;
+            background-color: #1f2935;
+            
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        
+        
+       
+        ol{
+            background-color: gainsboro;
+            color:#455363
+        }
+        .row{
+            background-color: gainsboro;
+        }
+        .details
+        {
+           display: flex;
+           color: #455363;
+        }
+       
+        .date,.name{
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        h2{
+            margin: 0;
+        }
+        .commentbody
+        {
+            padding-left: 10px;
+            color: #455363;
+        }
+
+        .uploader
+        {
+            color: gainsboro;
+        }
+
+        textarea
+        {
+            margin: 20px;
+            width: 80%;
+            height: 70px;
+        }
+
+    </style>
+</html>

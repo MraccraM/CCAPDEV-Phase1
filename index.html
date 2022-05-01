@@ -1,0 +1,157 @@
+<html>
+    <head>
+        <script>
+
+        </script>
+        
+    </head>
+    <body>
+        <script type="text/javascript">
+            function login(loggedin) {
+                if(loggedin == false)
+                {
+                    alert('idk put something here');
+                }
+                else
+                {
+                    alert('how does this work');
+                }
+            }
+        </script>
+
+        <div class="topheader">
+            <h1 class="tophead">NotReddit</h1>
+            <div class="headbuttons">
+                <a id="login" href="javascript:login(false)">
+                    Login/Register
+                </a>
+                <a class="sortby" href="mostupvoted">
+                    Most Upvoted
+                </a>
+                <a class="sortby" href="mostdownvoted">
+                    Most Downvoted
+                </a>
+                <a class="sortby" href="mostrecent">
+                    Most Recent
+                </a>
+                <a id="profile" href="">
+                    Profile
+                </a>
+            </div>
+        </div>
+
+
+        <ol>
+            <li class="row">
+                <a href="post.html">
+                    <h2 class="title">
+                        First post
+                    </h2>
+                    <div class="details">
+                        
+                        <p class="upvotes">
+                            14 upvotes
+                        </p>
+                        <p class="name">
+                            By Someone
+                        </p>
+                        <p class="date">
+                            30/04/2022
+                        </p>
+                        <p class="commentnums">
+                            2 comments
+                        </p>
+                    </div>
+                </a>
+            </li>
+            <li class="row">
+                <a href="post">
+                    <h2 class="title">
+                        Second post
+                    </h2>
+                    <div class="details">
+                        
+                        <p class="upvotes">
+                            15 upvotes
+                        </p>
+                        <p class="name">
+                            By Someone
+                        </p>
+                        <p class="date">
+                            30/04/2022
+                        </p>
+                        <p class="commentnums">
+                            1 comment
+                        </p>
+                    </div>
+                </a>
+            </li>
+        </ol>
+
+        <div class="pages">
+            <h4 class="curpage">Current page: 1</h4>
+            <a class="pagebutton">
+                Previous Page
+            </a>
+            <a class="pagebutton">
+                Next Page
+            </a>
+        </div>
+    </body>
+
+    <style>
+        body{
+            margin: 5px 20px;
+            color: pink;
+            background-color: #1f2935;
+            
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        .topheader{
+            background-color: #455363;
+            padding: 0 40px;
+        }
+        .headbuttons
+        {
+            text-align: center ;
+            
+            padding-bottom: 10px;
+            
+        }
+        .sortby,#login,#profile
+        {
+            border-right:solid 2px #fff;
+            border-right:solid 2px #fff;
+        }
+        #login
+        {
+            border-left: solid 2px #fff;
+        }
+        ol{
+            background-color: gainsboro;
+            color:#455363
+        }
+        .row{
+            background-color: gainsboro;
+        }
+        .details
+        {
+           display: flex;
+           color: #455363;
+        }
+        .date,.name{
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        h2{
+            margin: 0;
+        }
+        .pagebutton{
+            color: pink;
+        }
+
+    </style>
+</html>
