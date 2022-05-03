@@ -25,6 +25,25 @@ ol{
    color: #ffffff;
 }
 
+.topheader{
+    background-color: #505050;
+    padding: 0 40px;
+}
+#topheader{
+    background-color: #455363;
+    padding: 0 40px;
+}
+.headbuttons
+{
+    text-align: center ;
+    padding-bottom: 10px;
+}
+.sortby
+{
+    border-right:solid 2px rgb(138, 138, 138);
+    border-right:solid 2px rgb(138, 138, 138);
+}
+
 .date,.name{
     padding-left: 10px;
     padding-right: 10px;
