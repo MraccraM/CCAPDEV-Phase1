@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <title>
+            Readit Login
+        </title>
+        <link rel="stylesheet" href="../CSS/index.css">
+    </head>
+    <body>
+        <div class="topheader">
+            <a href="index.html">
+                <h1 class="tophead">Readit</h1>
+            </a>
+            <div class="headbuttons">
+                <a class="sortby" id="upvoted" href="mostupvoted">
+                    Most Upvoted
+                </a>
+                <a class="sortby" href="mostdownvoted">
+                    Most Downvoted
+                </a>
+                <a class="sortby" href="mostrecent">
+                    Most Recent
+                </a>
+            </div>
+        </div>
+        
+        <center>
+        <div class="registerForm">
+            <h1>Welcome to Readit</h1>
+            <h1 class="instructions">Register a Readit account</h1>
+            <label for="username">Username: </label>
+            <input type="text" id="username">
+            <br><br>
+            <label for="password">Password: </label>
+            <input type="password" id="password">
+            <br><br>
+            <label for="password">Confirm Password: </label>
+            <input type="password" id="confirmPassword">
+            <br><br>
+
+            <button id="Register" <!--onclick here-->Register</button>
+        </div>
+        </center>
+    </body>
+
+    <style>
+        .topheader{
+            background-color: #505050;
+            padding: 0 40px;
+        }
+        #topheader{
+            background-color: #455363;
+            padding: 0 40px;
+        }
+        .headbuttons
+        {
+            text-align: center ;
+            padding-bottom: 10px;
+        }
+        .sortby
+        {
+            border-right:solid 2px rgb(138, 138, 138);
+            border-right:solid 2px rgb(138, 138, 138);
+        }
+        #upvoted
+        {
+            border-left: solid 2px rgb(138, 138, 138);
+        }
+
+        .registerForm{
+            text-align: center;
+            width: 1000;
+            height: 325;
+            background-color: #505050;
+            margin-top: 50px;
+            padding: 75 0;
+        }
+        
+        label{
+            text-align: right;
+        }
+    </style>
+</html>

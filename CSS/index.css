@@ -1,31 +1,39 @@
 body{
     margin: 5px 20px;
-    color: pink;
-    background-color: #1f2935;
+    color: rgb(248, 114, 185);
+    background-color: #3a3a3a;
     
 }
+
 a{
     text-decoration: none;
-    color: black;
+    color: #ffffff;
 }
 
 ol{
-    background-color: gainsboro;
-    color:#455363
+    background-color: rgb(47, 47, 47);
+    color:#ffffff
 }
+
 .row{
-    background-color: gainsboro;
+    background-color: rgb(47, 47, 47);
 }
+
 .details
 {
    display: flex;
-   color: #455363;
+   color: #ffffff;
 }
 
 .date,.name{
     padding-left: 10px;
     padding-right: 10px;
 }
+
 h2{
     margin: 0;
+}
+
+h1{
+    color: rgb(248, 114, 185);
 }
