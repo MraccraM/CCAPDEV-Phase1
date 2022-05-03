@@ -1,7 +1,7 @@
 <html>
     <head>
         <title>
-            Readit Login
+            Profile
         </title>
         <link rel="stylesheet" href="../CSS/index.css">
     </head>
@@ -23,10 +23,98 @@
             </div>
         </div>
 
+        <div class="profile">
+            
+
+            <div class="nameAndInfo">
+                <img src="images/blank.png" alt="Profile Picture">
+
+                <h1 id="username">SgtDerp</h1>
+
+                <br>
+
+                <p class="bio">
+                    Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
+                    Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. 
+                    Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. 
+                    Mauris placerat eleifend leo.
+                </p>
+            </div>
+
+            <div class="posts">
+                <ol>
+                    <li class="row">
+                        <a href="post.html">
+                            <h2 class="title">
+                                First post
+                            </h2>
+                            <div class="details">
+                                
+                                <p class="upvotes">
+                                    14 upvotes
+                                </p>
+                                <p class="name">
+                                    By Someone
+                                </p>
+                                <p class="date">
+                                    30/04/2022
+                                </p>
+                                <p class="commentnums">
+                                    2 comments
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="row">
+                        <a href="post">
+                            <h2 class="title">
+                                Second post
+                            </h2>
+                            <div class="details">
+                                
+                                <p class="upvotes">
+                                    15 upvotes
+                                </p>
+                                <p class="name">
+                                    By Someone
+                                </p>
+                                <p class="date">
+                                    30/04/2022
+                                </p>
+                                <p class="commentnums">
+                                    1 comment
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </body>
+
     <style>
         #upvoted
         {
             border-left: solid 2px rgb(138, 138, 138);
+        }
+
+        img{
+            height: 200px;
+            width: 200px;
+            float: right;
+            margin: -30px 0 0 0;
+        }
+
+        .nameAndInfo{
+            background-color: rgb(47, 47, 47);
+            color: white;
+            height: 225px;
+            padding-top: 50px;
+            margin-top: 15px;
+        }
+
+        #username{
+            color: white;
         }
     </style>
 </html>
