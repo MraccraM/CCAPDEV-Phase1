@@ -1,23 +1,26 @@
 const mongoose = require('mongoose');
 
-
-
 var PostSchema = new mongoose.Schema({
-	title: {
+    author: {
+        type: String,
+        required: true
+    },
+    authorimg: {
+        type: String,
+        default: "kitten.jpg"
+    },
+    title: {
         type: String
     },
     content: {
-        type: String     
+        type: String,
+        required: true
     },
-    image: {
-        type: String
+    upvotes: {
+        type: Number,
+        default: 0
     },
-	upvotes: {
-        type: Number
-    },
-    uploader: {
-        type: String
-    }
-});
+    comments: [mongoose.SchemaTypes.ObjectId]
+})
 
 module.exports = mongoose.model('Post', PostSchema);
