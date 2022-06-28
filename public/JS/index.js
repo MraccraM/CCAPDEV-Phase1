@@ -7,7 +7,7 @@ mongoose.connect('mongodb://127.0.0.1/submissionDB',
 
 const fileUpload = require('express-fileupload');
 
-const Post = require('./database/models/PostModel')
+const Post = require('../../database/models/PostModel')
 const path = require('path');
 app.use(express.json());
 app.use(express.urlencoded( {extended:true}));
