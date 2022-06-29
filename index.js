@@ -19,7 +19,7 @@ app.post('/submit-post', function(req, res) {
     image.mv(path.resolve(__dirname, 'public/images',image.name),(error) => {
         Post.create({
             ...req.body,
-            image:'/images'+image.name
+            image:'/images/'+image.name
         }, (error,post) => {
             res.redirect('/')
         })
