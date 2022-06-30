@@ -20,6 +20,7 @@ var PostSchema = new mongoose.Schema({
         type: Number,
         default: 0
     },
+    postID: Number,
     comments: [mongoose.SchemaTypes.ObjectId]
 })
 

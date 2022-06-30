@@ -6,7 +6,8 @@ var card_postSchema = new mongoose.Schema({
     author:{
         type: String,
         required: true,
-    }
+    },
+    postID: Number
 })
 
 module.exports = mongoose.model('Card_Post', card_postSchema);

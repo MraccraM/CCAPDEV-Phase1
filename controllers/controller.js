@@ -11,7 +11,7 @@ const controller = {
     },
 
     getIndex: function (req,res) {
-        res.render('index.hbs');
+        res.render('card_post.hbs');
     }
 }
 

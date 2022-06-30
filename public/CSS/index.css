@@ -2,14 +2,37 @@
     GENERAL PAGE DESIGN
 */
 body {
+    font-family: "Comic Sans MS";
     margin: 5px 20px;
     color: rgb(248, 114, 185);
     background-color: #3a3a3a;
 }
 
-.navbar {
+.header {
     background-color: #505050;
-    padding: 0 40px;
+    padding: 5 40 15; /*top right bottom left*/
+    height: 55px;
+    font-size: 36px;
+}
+
+.nav {
+    float: right;
+    margin: 15px;
+}
+
+button {
+    font-family: "Comic Sans MS";
+    font-size: 24px;
+}
+
+a:hover {
+    color: white;
+}
+
+a {
+    color:rgb(248, 114, 185);
+    position: absolute;
+    top: 15px;
 }
 
 /*

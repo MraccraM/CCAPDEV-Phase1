@@ -20,7 +20,8 @@ var CommentSchema = new mongoose.Schema({
     upvotes: {
         type: Number,
         default: 0
-    }
+    },
+    postID: Number
 })
 
 module.exports = mongoose.model('Comment', CommentSchema);
