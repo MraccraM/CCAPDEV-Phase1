@@ -5,7 +5,7 @@ var PostSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    authorimg: {
+    image: {
         type: String,
         default: "kitten.jpg"
     },
@@ -20,7 +20,10 @@ var PostSchema = new mongoose.Schema({
         type: Number,
         default: 0
     },
-    postID: Number,
+    date: {
+        type: Date,
+        default: Date()
+    },
     comments: [mongoose.SchemaTypes.ObjectId]
 })
 
