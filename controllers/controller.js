@@ -11,8 +11,20 @@ const controller = {
     },
 
     getIndex: function (req,res) {
-        res.render('card_post.hbs');
-    }
+        res.render('index');
+    },
+
+    addPost: function (req, res) {
+        
+    },
+
+    getProfile: function (req,res) {
+
+    },
+
+    userLogout: function (req,res) {
+
+    },
 }
 
 module.exports = controller;
