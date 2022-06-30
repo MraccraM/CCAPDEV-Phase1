@@ -13,10 +13,10 @@ const controller = {
         res.status(204);
     },
 
-    getIndex: function (req,res) {
-        res.render('index');
+    getIndex: async (req,res) => {
+        const posts = await Post.find({})
+        res.render('index' , {posts})
     },
-
     addPost: function (req, res) {
         
     },
@@ -28,10 +28,7 @@ const controller = {
     userLogout: function (req,res) {
 
     },
-    getIndex: async (req,res) => {
-        const posts = await Post.find({})
-        res.render('index' , {posts})
-    }
+    
 }
 
 module.exports = controller;
