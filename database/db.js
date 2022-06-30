@@ -1,7 +1,7 @@
 
 const mongoose = require('mongoose');
 
-const url = 'mongodb://localhost:27017/APDEV-Project';
+const url = 'mongodb://127.0.0.1:27017/APDEV-Project';
 
 const options = {
     useUnifiedTopology: true,
