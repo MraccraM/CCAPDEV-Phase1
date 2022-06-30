@@ -17,6 +17,7 @@ app.use(fileUpload());
 //handlebars
 var hbs = require('hbs');
 app.set('view engine', 'hbs');
+hbs.registerPartials(__dirname + `/views/partials`);
 
 app.post('/submit-post', function(req, res) {
     const {image} = req.files
@@ -30,6 +31,10 @@ app.post('/submit-post', function(req, res) {
     })
 });
 
+app.get('/index' , async(req,res) => {
+    const posts = await Post.find({}) //perform mongodb query {store results in post}
+    res.render('index',{posts})
+});
 app.get('/', function(req, res) {
     res.sendFile(__dirname + '\\' + 'submit.html');
 });
