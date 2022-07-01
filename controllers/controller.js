@@ -42,6 +42,18 @@ const controller = {
     userLogout: function (req,res) {
 
     },
+
+    getID: async (req,res) => {
+        try{
+        const post = await Post.findById(req.params.id)
+        
+        res.render('partials/card', { post : post })
+        res.send('id: ' + req.params.id);
+        }
+        catch{
+        res.redirect('/')
+        }
+    }
     
 }
 
