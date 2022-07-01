@@ -47,8 +47,8 @@ const controller = {
         try{
         const post = await Post.findById(req.params.id)
         
-        res.render('partials/card', { post : post })
-        res.send('id: ' + req.params.id);
+        res.render('content', { post : post })
+        //res.send('id: ' + req.params.id);
         }
         catch{
         res.redirect('/')
