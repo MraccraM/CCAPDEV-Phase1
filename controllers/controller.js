@@ -4,9 +4,7 @@ const comment = require("../database/models/CommentsModel.js");
 const card_post = require("../database/models/card_postModel.js");
 const user = require ("../database/models/UserModel.js");
 
-//new stuff
-
-//end of new
+//Application stuff
 const controller = {
 
     getFavicon: function (req, res) {
@@ -17,6 +15,7 @@ const controller = {
         const posts = await Post.find({})
         res.render('index' , {posts})
     },
+
     addPost: function (req, res) {
         
     },

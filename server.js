@@ -8,13 +8,8 @@ const routes = require("./routes/routes.js");
 const app = express();
 app.use(bodyParser.urlencoded({extended: false}));
 
-//start of test stuff
-
-//end of test stuff
 app.set('view engine', 'hbs');
 hbs.registerPartials(__dirname + '/views/partials');
-
-
 
 dotenv.config();
 port = 3000;
