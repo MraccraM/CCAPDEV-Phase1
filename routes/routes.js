@@ -9,7 +9,7 @@ app.get('/favicon.ico', controller.getFavicon);
 app.get('/', controller.getIndex);
 
 app.get('/addPost', controller.addPost);
-app.post('/submitPost', controller.submitPost);
+app.post('/addPost', controller.submitPost);
 app.get('/:id' , controller.getID);
 
 app.get('/profile', controller.getProfile);

@@ -12,7 +12,7 @@ const controller = {
     },
 
     getIndex: async (req,res) => {
-        const posts = await Post.find({})
+        const posts = await Post.find({}).sort({ date: 'desc' })
         res.render('index' , {posts});
     },
 
