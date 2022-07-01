@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="/CSS/index.css">
+        <script type="text/javasript" src="/JS/index.js"></script>
+    </head>
+    <body>
+        <form id='addPost_form'<!--action="/submit-post" method="post" enctype="multipart/form-data"-->>
+            Title: <br> <input name="title" id="title" type="text" /> <br />
+            Content: <br> <textarea name="content" id="conten" rows="10" cols="30"> </textarea>
+            upvotes: <br> <input name="upvotes" id="upvotes" type="number" /> <br />
+            author: <br> <input name="author" id="author" type="text" /> <br />
+
+            <input type="file" name="image" id="image"> <br />
+            <input type="submit" id="submit">
+        </form>
+        <br>
+        <a href="/">View all posts</a>
+    </body>
+</html>
