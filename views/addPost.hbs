@@ -7,13 +7,23 @@
     </head>
 
     <body>
+        <div class="header">
+            <a href="/">READit</a>
+        
+            <form action="/logout" method="get" class="nav"><button class="btn btn-danger">Logout</button></form>
+            <form action="/profile" method="get" class="nav"><button class="btn btn-success">Profile</button></form> 
+        </div>
+
+        <br>
+
         <center>
-        <form action="/submitPost" method="post" id="content">
+        <form action="/addPost" method="post" id="content">
             Title: <br> <input name="title" type="text" /> <br />
             Author: <br> <input name="author" type="text" /> <br />
-            Content: <br> <textarea name="content" rows="10" cols="30"></textarea><br />
+            Content: <br> <textarea name="content" rows="10" cols="30" class="mb-2"></textarea><br />
             
-            <input class="btn btn-primary" type="submit">
+            <a href="/" class="btn btn-warning" id="cancel">Cancel</a>
+            <button class="btn btn-primary" type="submit">Submit</button>
         </form>
         </center>
     </body>

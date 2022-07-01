@@ -29,9 +29,9 @@ const controller = {
 
         try{
             post = await post.save();
-            res.redirect('/');
+            alert("Post Submitted, you may submit more posts or return to home page");
         } catch (e) {
-            res.render('addPost');
+            res.render('addPost', {post: post});
         }
     },
 

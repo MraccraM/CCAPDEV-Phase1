@@ -36,6 +36,10 @@ a {
     top: 5px;
 }
 
+#cancel {
+    position: relative;
+}
+
 /*
     CARD-POST DESIGN
 */
