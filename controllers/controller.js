@@ -13,11 +13,26 @@ const controller = {
 
     getIndex: async (req,res) => {
         const posts = await Post.find({})
-        res.render('index' , {posts})
+        res.render('index' , {posts});
     },
 
     addPost: function (req, res) {
-        
+        res.render('addPost');
+    },
+
+    submitPost: async (req,res) => {
+        const post = new Post({
+            title: req.body.title,
+            author: req.body.author,
+            content: req.body.content
+        })
+
+        try{
+            post = await post.save();
+            res.redirect('/');
+        } catch (e) {
+            res.render('addPost');
+        }
     },
 
     getProfile: function (req,res) {

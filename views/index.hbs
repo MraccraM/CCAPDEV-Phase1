@@ -9,10 +9,12 @@
         <div class="header">
             <a href="/">READit</a>
         
-            <form action="/logout" method="get" class="nav"><button id="logout">Logout</button></form>
-            <form action="/profile" method="get"  class="nav"><button id="profile">Profile</button></form> 
-            <form action="/addPost" method="get"  class="nav"><button id="addPost">Add Post</button></form>
+            <form action="/logout" method="get" class="nav"><button class="btn btn-danger">Logout</button></form>
+            <form action="/profile" method="get" class="nav"><button class="btn btn-success">Profile</button></form> 
+            <form action="/addPost" method="get" class="nav"><button class="btn btn-primary">Add Post</button></form>
         </div>
+
+        <br>
 
         <div class="cardPosts">
             {{#each posts}}

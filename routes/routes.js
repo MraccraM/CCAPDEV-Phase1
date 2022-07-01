@@ -7,6 +7,8 @@ app.get('/favicon.ico', controller.getFavicon);
 app.get('/', controller.getIndex);
 
 app.get('/addPost', controller.addPost);
+app.post('/submitPost', controller.submitPost);
+
 app.get('/profile', controller.getProfile);
 app.get('/logout', controller.userLogout);
 
