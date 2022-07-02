@@ -14,7 +14,7 @@ app.get('/:id' , controller.getID);
 
 app.get('/profile', controller.getProfile);
 
-//app.get('/register', controller.getRegister);
+app.get('/register', controller.getRegister);
 
 app.get('/logout', controller.userLogout);
 
