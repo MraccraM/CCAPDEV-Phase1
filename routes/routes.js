@@ -14,7 +14,13 @@ app.get('/:id' , controller.getID);
 
 app.get('/profile', controller.getProfile);
 
-app.get('/register', controller.getRegister);
+//app.get('/addProfile', controller.getRegister);
+
+app.get('/addelse', function(req,res){
+    res.render("register");
+})
+
+app.get('/test', controller.getTest);
 
 app.get('/logout', controller.userLogout);
 

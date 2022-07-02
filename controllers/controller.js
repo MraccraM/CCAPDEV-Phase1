@@ -20,6 +20,10 @@ const controller = {
         res.render('addPost');
     },
 
+    getTest: function(req,res){
+        res.render('Test');
+    },
+
     submitPost: async (req,res) => {
         const post = new Post({
             title: req.body.title,
@@ -43,11 +47,11 @@ const controller = {
 
     },
 
-    getRegister: function(req,res) {
+/*    getRegister: function(req,res) {
         res.render('register', {
             pageTitle: 'Registration',
           });
-    },
+    },*/
 
     getID: async (req,res) => {
         try{
