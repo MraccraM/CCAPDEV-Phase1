@@ -43,6 +43,12 @@ const controller = {
 
     },
 
+    getRegister: function(req,res) {
+        res.render('register', {
+            pageTitle: 'Registration',
+          });
+    },
+
     getID: async (req,res) => {
         try{
         const post = await Post.findById(req.params.id)

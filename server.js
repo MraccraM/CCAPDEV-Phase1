@@ -1,7 +1,7 @@
-const dotenv = require('dotenv');
-const express = require('express');
-const hbs = require('hbs');
-const bodyParser = require('body-parser');
+const dotenv = require('dotenv'); //
+const express = require('express'); //
+const hbs = require('hbs'); //
+const bodyParser = require('body-parser'); //
 const db = require("./database/db.js");
 const routes = require("./routes/routes.js");
 
