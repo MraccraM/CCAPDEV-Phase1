@@ -43,18 +43,47 @@ const controller = {
 
     },
 
-    getID: async (req,res) => {
-        try{
-        const post = await Post.findById(req.params.id)
+    getID: (req,res) => {
         
-        res.render('content', { post : post })
+        Post.findById(req.params.id).populate('comments').exec( function(err, post) {
+            if(err){
+                console.log(err);
+            }
+            else{
+                res.render('content', { post : post });
+            }
+        });
+        
         //res.send('id: ' + req.params.id);
-        }
-        catch{
-        res.redirect('/')
-        }
-    }
+        
+        
+    },
     
+    addComment: async(req,res) => {
+        const comm = new comment({
+            commentAuthor: req.body.commentAuthor,
+            content: req.body.content
+        });
+        comm.save((err, result) =>{
+            if(err){
+                console.log(err)
+            }else{
+                Post.findById(req.params.id, (err, post) => {
+                    if(err){
+                        console.log(err);
+                    }else{
+                        post.comments.push(result);
+                        post.save();
+                        console.log('comments: ');
+                        console.log(post.comments);
+                        res.redirect('/');
+                    }
+                })
+                
+  
+            }
+        });
+    }
 }
 
 module.exports = controller;

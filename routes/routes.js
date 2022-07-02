@@ -11,6 +11,7 @@ app.get('/', controller.getIndex);
 app.get('/addPost', controller.addPost);
 app.post('/addPost', controller.submitPost);
 app.get('/:id' , controller.getID);
+app.post('/:id/comment' , controller.addComment);
 
 app.get('/profile', controller.getProfile);
 app.get('/logout', controller.userLogout);
