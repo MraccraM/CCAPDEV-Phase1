@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+const commentsmodel=require('./CommentsModel')
 
 var PostSchema = new mongoose.Schema({
     author: {
@@ -24,7 +25,12 @@ var PostSchema = new mongoose.Schema({
         type: Date,
         default: Date()
     },
-    comments: [mongoose.SchemaTypes.ObjectId]
+    comments: [
+        {
+            type: mongoose.Schema.Types.ObjectId,
+            ref: commentsmodel
+        }
+    ]
 })
 
 module.exports = mongoose.model('Post', PostSchema);

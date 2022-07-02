@@ -77,6 +77,19 @@ const database = {
             console.log('Document deleted: ' + result.deletedCount);
             return callback(true);
         });
+    },
+
+    create: function(obj, next) {
+        const user = new User(obj);
+        user.save(function(err, user) {
+          next(err, user);
+        });
+    },
+
+    getOne: function(model, query, next){
+        model.findOne(query, function(err, user){
+            next(err, user);
+        })
     }
 
 }
