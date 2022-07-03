@@ -24,7 +24,7 @@ const session = require('express-session'); //
 const flash = require('connect-flash');  //
 const MongoStore = require('connect-mongodb-session')(session); //
  
-var url = 'mongodb://localhost:27017/APDEV-Project';
+var url = 'mongodb://127.0.0.1:27017/APDEV-Project';
 //"mongodb://localhost:27017";
 
 app.use(session({
@@ -32,7 +32,7 @@ app.use(session({
     resave: false,
     saveUninitialized: true,
     store: new MongoStore({
-        mongoUrl: url,
+        uri: url,
         collection: "sessions"
      }),
     cookie: { secure: false, maxAge: 1000 * 60 * 60 * 24 * 7 }
