@@ -99,9 +99,10 @@ const controller = {
                         // passwords match (result == true)
                         if (result) {
                           // Update session object once matched!
+                          console.log("setting session");
                           req.session.user = user._id;
                           req.session.username = user.username;
-                      
+                            console.log("checking session");
                           console.log(req.session);
                       
                           res.redirect('/');
@@ -142,7 +143,7 @@ const controller = {
     submitPost: async (req,res) => {
         const post = new Post({
             title: req.body.title,
-            author: req.body.author,
+            author: req.session.username,
             content: req.body.content
         })
 
@@ -180,7 +181,7 @@ const controller = {
     
     addComment: async(req,res) => {
         const comm = new comment({
-            commentAuthor: req.body.commentAuthor,
+            commentAuthor: req.session.username,
             content: req.body.content
         });
         comm.save((err, result) =>{

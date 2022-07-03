@@ -7,7 +7,6 @@
             {{> card}}
         {{/each}}
         <form action="/{{#each post}}{{this._id}}{{/each}}/comment" method="post" id="content">
-            Author: <br> <input name="commentAuthor" type="text" /> <br />
             Content: <br> <textarea name="content" rows="10" cols="30" class="mb-2"></textarea><br />
             
             <button class="btn btn-primary" type="submit">Submit</button>
