@@ -14,8 +14,12 @@ const controller = {
     },
 
     getIndex: async (req,res) => {
+        var activeuser = req.session.username;
+        
+        if(activeuser === undefined)
+          activeuser = 'guest';
         const posts = await Post.find({}).sort({ date: 'desc' })
-        res.render('index' , {posts});
+        res.render('index' , {posts , name: activeuser});
     },
 
     addPost: function (req, res) {
