@@ -58,6 +58,12 @@ a {
     font-size: 28;
 }
 
+#welcomeMessage{
+    position: absolute;
+    left: 600;
+    top: 5;
+}
+
 /*
     CARD-POST DESIGN
 */
