@@ -3,6 +3,7 @@ const mongoose = require('mongoose');
 var CommentSchema = new mongoose.Schema({
     commentAuthor: {
         type: String,
+        default: 'Guest User',
         required: true
     },
     content: {
