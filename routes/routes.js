@@ -35,7 +35,4 @@ app.get('/profile', isPrivate, controller.getProfile);
 //    res.render("register.hbs");
 //});
 
-
-app.get('/logout', controller.userLogout);
-
 module.exports = app;
