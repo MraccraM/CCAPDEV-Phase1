@@ -156,11 +156,7 @@ const controller = {
     },
 
     getProfile: function (req,res) {
-
-    },
-
-    userLogout: function (req,res) {
-
+      res.render('addPost');
     },
 
     getID: (req,res) => {

@@ -50,9 +50,6 @@ app.use((req, res, next) => {
 app.use(express.static('public'));
 app.use('/',routes);
 
-// Global messages vars
-
-
 app.listen(port, hostname, function() {
     console.log("Server is running at:");
     console.log("http://" + hostname + ":" + port);
