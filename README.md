@@ -1,4 +1,4 @@
-# CCAPDEV-Phase1
+# CCAPDEV-Project Phase 2 and 3
 
 ### RUNNING THE PROGRAM
 1. To run the program, open the command prompt in the folder where the project is located "./CCAPDEV-PROJECT"
