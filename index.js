@@ -32,7 +32,7 @@ app.post('/submit-post', function(req, res) {
 });
 
 app.get('/index' , async(req,res) => {
-    const posts = await Post.find({}) //perform mongodb query {store results in post}
+    const posts = await Post.find({}) 
     res.render('index',{posts})
 });
 app.get('/', function(req, res) {
