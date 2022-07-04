@@ -1,4 +1,3 @@
-const dotenv = require('dotenv'); //
 const express = require('express'); //
 const hbs = require('hbs'); //
 const bodyParser = require('body-parser'); //
@@ -11,8 +10,8 @@ app.use(bodyParser.urlencoded({extended: false}));
 app.set('view engine', 'hbs');
 hbs.registerPartials(__dirname + '/views/partials');
 
-dotenv.config();
-port = 3000;
+require('dotenv').config();
+PORT = process.env.PORT || 3000;
 hostname = "localhost";
 
 db.connect();
@@ -24,7 +23,7 @@ const session = require('express-session'); //
 const flash = require('connect-flash');  //
 const MongoStore = require('connect-mongodb-session')(session); //
  
-var url = 'mongodb://127.0.0.1:27017/APDEV-Project';
+var url = process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/APDEV-Project';
 //"mongodb://localhost:27017";
 
 app.use(session({
@@ -50,7 +49,7 @@ app.use((req, res, next) => {
 app.use(express.static('public'));
 app.use('/',routes);
 
-app.listen(port, hostname, function() {
+app.listen(PORT, function() {
     console.log("Server is running at:");
-    console.log("http://" + hostname + ":" + port);
+//    console.log("http://" + hostname + ":" + port);
 })

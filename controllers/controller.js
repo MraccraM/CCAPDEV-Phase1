@@ -22,6 +22,10 @@ const controller = {
         res.render('index' , {posts , name: activeuser});
     },
 
+    getAbout: function (req,res) {
+      res.render('about');
+    },
+
     addPost: function (req, res) {
         res.render('addPost');
     },
