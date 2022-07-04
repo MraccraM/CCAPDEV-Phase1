@@ -23,7 +23,7 @@ const session = require('express-session'); //
 const flash = require('connect-flash');  //
 const MongoStore = require('connect-mongodb-session')(session); //
  
-var url = 'mongodb://127.0.0.1:27017/APDEV-Project';
+var url = process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/APDEV-Project';
 //"mongodb://localhost:27017";
 
 app.use(session({
