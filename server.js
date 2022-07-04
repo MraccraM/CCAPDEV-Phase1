@@ -1,4 +1,3 @@
-const dotenv = require('dotenv'); //
 const express = require('express'); //
 const hbs = require('hbs'); //
 const bodyParser = require('body-parser'); //
@@ -11,7 +10,7 @@ app.use(bodyParser.urlencoded({extended: false}));
 app.set('view engine', 'hbs');
 hbs.registerPartials(__dirname + '/views/partials');
 
-dotenv.config();
+require('dotenv').config();
 PORT = process.env.PORT || 3000;
 hostname = "localhost";
 
