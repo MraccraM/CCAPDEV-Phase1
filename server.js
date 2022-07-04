@@ -12,7 +12,7 @@ app.set('view engine', 'hbs');
 hbs.registerPartials(__dirname + '/views/partials');
 
 dotenv.config();
-port = 3000;
+PORT = process.env.PORT || 3000;
 hostname = "localhost";
 
 db.connect();
