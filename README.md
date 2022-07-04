@@ -5,6 +5,7 @@
 
 2. On the command prompt, enter the following command
 > npm i
+>
 > node server.js
 
 ### PROGRAM INFORMATION
