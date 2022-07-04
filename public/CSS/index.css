@@ -1,0 +1,151 @@
+/*
+    GENERAL PAGE DESIGN
+*/
+body {
+    font-family: "Comic Sans MS";
+    margin: 5px 20px;
+    color: rgb(248, 114, 185);
+    background-color: #3a3a3a;
+}
+
+.header {
+    background-color: #505050;
+    padding: 5 40 20; /*top right bottom left*/
+    height: 55px;
+    font-size: 36px;
+}
+
+.nav {
+    float: right;
+    padding-left: 10;
+    margin-left: 10;
+    font-size: 18px;
+}
+
+form {
+    font-family: "Comic Sans MS";
+}
+
+a:hover {
+    color: white;
+}
+
+a {
+    color:rgb(248, 114, 185);
+}
+
+#cancel {
+    position: relative;
+}
+
+.home {
+    position: absolute;
+    top: 5px;
+}
+
+#nav {
+    float: right;
+    display: inline;
+    position: relative;
+    margin-left: 15;
+}
+
+.bottomMessage {
+    color: white;
+}
+
+.row {
+    font-size: 28;
+}
+
+#welcomeMessage{
+    position: absolute;
+    left: 600;
+    top: 5;
+}
+
+/*
+    CARD-POST DESIGN
+*/
+
+.cardPosts {
+    background-color: rgb(153, 153, 153);
+    width: 1000;
+    position: absolute;
+    left: 150px;
+    color: rgb(0, 0, 0);
+    padding: 20;
+}
+
+.card_author {
+    color:rgb(117, 113, 113);
+    font-size: 20;
+    margin-left: 10;
+}
+
+.card_title {
+    margin-bottom: 3;
+    margin-left: 10;
+    font-size: 28;
+}
+
+.card_post {
+    width: 750;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    background-color: rgb(246, 204, 247);
+    box-sizing: border-box;
+    margin-top: 10px;
+    text-align: left;
+    position: relative;
+    left: 105;
+}
+
+/*
+    POST DESIGN
+*/
+
+.postAuthor {
+    color: rgb(206, 153, 196);
+}
+
+.card {
+    background-color: #505050;
+}
+
+h2 {
+    font-size: 36;
+    margin-left: 20;
+    margin-bottom: -5;
+}
+
+h3 {
+    font-size: 18;
+    margin-left: 30;
+    margin-bottom: 20;
+}
+
+.postContent {
+    font-size: 28;
+    margin-left: 40;
+}
+
+/*
+    COMMENTS DESIGN
+*/
+.commentContent {
+    margin-bottom: 15;
+    font-size: 30;
+    margin-left: 15;
+}
+
+.commentAuthor {
+    margin-left: 25;
+    margin-bottom: -5;
+}
+
+.date {
+    font-size: smaller;
+    margin-left: 25;
+}
