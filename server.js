@@ -49,7 +49,7 @@ app.use((req, res, next) => {
 app.use(express.static('public'));
 app.use('/',routes);
 
-app.listen(port, function() {
+app.listen(PORT, function() {
     console.log("Server is running at:");
 //    console.log("http://" + hostname + ":" + port);
 })
